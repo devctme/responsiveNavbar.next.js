@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <div className="shadow-md w-full fixed top-0 left-0">
-      <nav className="  md:flex items-center justify-around bg-white py-4 md:px-10 px-7">
+      <nav className=" md:flex items-center justify-around bg-white py-4 md:px-10 px-7">
         <div className="font-bold text-2xl cursor-pointer flex items-center">
           <Link className="font-bold text-2xl" href={"/"}>
             DevCT
@@ -47,8 +47,8 @@ const Navbar = () => {
         </div>
 
         <ul
-          className={`w-full left-0 bg-white  pb-12 absolute   md:flex md:items-center md:pb-0 md:static  -z-10 md:z-10   md:w-auto md:pl-0 pl-9 transition-all duration-300 ease top-20 ${
-            isOpen ? " left-5" : " -left-64 "
+          className={`w-full left-0 bg-white  pb-12 absolute   md:flex md:items-center md:pb-0 md:static  -z-10 md:z-auto  md:w-auto md:pl-0 pl-9 transition-all duration-300 ease top-20 ${
+            isOpen ? " left-0" : " -left-full "
           }`}
         >
           {navData.map((link) => (
